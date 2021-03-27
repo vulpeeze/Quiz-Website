@@ -1,15 +1,24 @@
 <?php
     include_once 'header.php'
 ?>
+    <div class="container">
     <h1>Log In</h1>
-
     <form action="includes/login.inc.php" method="post">
-        <label for="Username">Username:</label>
-        <input type="text" id="Username" name="uid" placeholder="Username or Email"><br>
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="password"><br>
-        
-        <br><br><input type="submit" name="submit" value="Log in">
+        <div class="form-group row">
+            <label for="Username" class="col-sm-1 col-form-label">Username:</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="Username" name="uid" placeholder="Username or Email"><br>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="pwd" class="col-sm-1 col-form-label">Password:</label>
+            <div class="col-sm-7">
+                <input type="password" class="form-control" id="pwd" name="password" placeholder="Password"><br>
+            </div>
+        </div>
+        <div class="form-group row">
+            <input type="submit" class="btn btn-primary col-sm-1 offset-sm-1" name="submit" value="Log in">
+        </div>
     </form>
 
     <?php
@@ -24,5 +33,6 @@
         }
     ?>
 
+</div>
 </body>
 </html>

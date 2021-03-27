@@ -1,26 +1,50 @@
 <?php
     include_once 'header.php'
 ?>
+    <div class="container">
     <h1>Registration</h1>
 
     <form action="includes/register-inc.php" method="post">
-        <label for="Name">Name:</label>
-        <input type="text" id="Name" name="sName" placeholder="Duncan Hull"><br>
-        <label for="uid">Username:</label>
-        <input type="text" id="uid" name="uid" placeholder="KittenDestroyer"><br>
-        <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="password"><br>
-        <label for="Cpwd">Confirm Password:</label>
-        <input type="password" id="Cpwd" name="confirmpassword"><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="sEmail" placeholder="DuncanHull@manchester.ac.uk"><br>
-        
-        <input type="radio" id="staff" name="status" value="staff">
-        <label for="staff">Staff</label><br>
-        <input type="radio" id="student" name="status" value="student">
-        <label for="student">Student</label>
-        
-        <br><br><input type="submit" name="submit" value="Register">
+    <div class="form-group row">
+        <label for="Name" class="col-sm-1 col-form-label">Name:</label>
+        <div class="col-sm-7">
+        <input type="text" class="form-control" id="Name" name="sName" placeholder="Duncan Hull"><br>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="uid" class="col-sm-1">Username:</label>
+        <div class="col-sm-7">
+        <input type="text" class="form-control" id="uid" name="uid" placeholder="KittenDestroyer"><br>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="pwd" class="col-sm-1">Password:</label>
+        <div class="col-sm-7">
+        <input type="password" class="form-control" id="pwd" name="password"><br>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Cpwd" class="col-sm-1">Confirm Password:</label>
+        <div class="col-sm-7">
+        <input type="password" class="form-control" id="Cpwd" name="confirmpassword"><br>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="email" class="col-sm-1">Email:</label>
+        <div class="col-sm-7">
+        <input type="email" class="form-control" id="email" name="sEmail" placeholder="DuncanHull@manchester.ac.uk"><br>
+        </div>
+    </div>
+    <div class="offset-sm-1 form-check">
+        <input type="radio" class="form-check-input" id="staff" name="status" value="staff">
+        <label for="staff" class="form-check-label">Staff</label><br>
+        <input type="radio" class="form-check-input" id="student" name="status" value="student">
+        <label for="student" class="form-check-label">Student</label>
+    </div>
+    <br>
+    <div class="form-group row">
+        <br><br><input type="submit" class="btn btn-primary col-sm-1 offset-sm-1" name="submit" value="Register">
+    </div>
     </form>
 
     <?php
@@ -42,6 +66,7 @@
             }
         }
     ?>
+    </div>
 
 </body>
 </html>
